@@ -1,6 +1,6 @@
 # OpenOPC-python3.6
-OpenOPC for python3.6 enviroment  
-This porcedure is for OpenOPC functional test,set your localhost as OPC server.  
+OpenOPC for python3.6 environment  
+This procedure is for OpenOPC functional test,set your localhost as OPC server.  
 MatrikonOPC Server for Simulation is recommended,you can download from [here](https://www.matrikonopc.com/downloads/178/index.aspx).     Make sure these environment variables in your Windows box are set as shown:
 
  `OPC_CLASS=Matrikon.OPC.Automation;Graybox.OPC.DAWrapper;HSCOPC.Automation;RSI.OPCAutomation;OPC.Automation`
@@ -26,19 +26,19 @@ You can do pip install through command line by running :`pip install pywin32`
 You can do pip install through command line by running :`pip install pyro4`
   
 
-4. Clone or download the repository,extract the compressed file to a folder in your windows box (i.e.`C:\OpenOPC36`).
+4. Clone or download the repository, extract the compressed file to a folder in your windows box (i.e.`C:\OpenOPC36`).
 
 
-5. Change to lib folder,register the OPC automation wrapper(gbda_aut.dll) by running this in commmand line:  
+5. Change to lib folder, register the OPC automation wrapper (gbda_aut.dll) by running this in commmand line:  
 `C:\OpenOPC36\lib>regsvr32 gbda_aut.dll`
   
 
-6. Change to lib folder,copy python36.dll to your python installation folder if the dll is not existed,folder path as:  
+6. Change to lib folder, copy python36.dll to your python installation folder if the dll is not existed, folder path as:  
 `Lib->site-packages->win32`  
 `i.e.` `C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Lib\site-packages\win32`
   
 
-7. Change to src folder,copy OpenOPC.py to your python installation folder,folder path as: `Lib->site-packages`  
+7. Change to src folder, copy OpenOPC.py to your python installation folder, folder path as: `Lib->site-packages`  
 `i.e.` `C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Lib\site-packages`
    
 
@@ -60,7 +60,7 @@ net start SERVICE through command line as below:
   
   
 10. Functional test  
-- using the OpenOPC Gateway Service mode(both win32 platform and non-windows platform)
+- using the OpenOPC Gateway Service mode (both win32 platform and non-windows platform)
 
   client code as below:
 
@@ -78,7 +78,7 @@ net start SERVICE through command line as below:
        if __name__=='__main__':
            readopc()
       
-- using DCOM mode(only win32 platform)
+- using DCOM mode (only win32 platform)
 
      client code as below：
 
@@ -93,7 +93,7 @@ net start SERVICE through command line as below:
 `Copyright (c) 2008-2012 by Barry Barnreiter (barry_b@users.sourceforge.net)`  
 `Copyright (c) 2014 by Anton D. Kachalov (mouse@yandex.ru)`  
 `Copyright (c) 2017 by José A. Maita (jose.a.maita@gmail.com)`  
-For more details please check Mr.joseamaita's repository about OpenOPC [here](https://github.com/joseamaita/openopc120)
+For more details please check Mr. José A. Maita's repository about OpenOPC [here](https://github.com/joseamaita/openopc120)
   
   
   
